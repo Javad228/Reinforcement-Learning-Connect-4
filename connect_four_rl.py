@@ -305,7 +305,7 @@ def play_against_agent(agent):
     ui.run()
 
 if __name__ == "__main__":
-    agent, wr = train(num_games=90000, eval_interval=500)
+    agent, wr = train(num_games=60000, eval_interval=500)
     print(f"Final eval vs random: {wr[-1][1]:.2%}")
     plot_performance(wr)
     play_against_agent(agent)
